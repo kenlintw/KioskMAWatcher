@@ -163,6 +163,8 @@ Arguments
 
 ```cmd
 /c type nul > "C:\Users\Miramar\Documents\scripts\show_maintenance.flag"
+/c type nul > "C:\Users\User\Documents\scripts\show_maintenance.flag"
+/c type nul > "C:\Users\admin\Documents\scripts\show_maintenance.flag"
 ```
 
 Purpose
