@@ -1,0 +1,32 @@
+# kioskMA.pl configuration
+# Copy to a per-kiosk location (e.g. C:/Users/Miramar/Documents/scripts/kioskMA.cfg)
+# and pass with --config=... or set environment-specific values here.
+# Lines starting with '#' are ignored. Values may be quoted with " or '.
+
+# Where the watcher / launch artifacts live.
+scripts_dir   = C:/Users/Miramar/Documents/scripts
+
+# Existing kiosk utility that stops the running kiosk application.
+kill_tool     = C:/ITKiosk/Tool/KillMainApModule.exe
+
+# Microsoft Edge executable.
+# Adjust the path if you use 64-bit Edge:
+#   C:/Program Files/Microsoft/Edge/Application/msedge.exe
+edge_exe      = C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe
+
+# Maintenance page URL (file:// uses forward slashes, even on Windows).
+ma_page       = file:///C:/MAPage/KioskMA.html
+
+# Leave empty to write to <scripts_dir>/launchMAPage.log.
+log_file      =
+
+# Watcher poll interval, in seconds.
+poll_seconds  = 5
+
+# Tunable pauses (seconds) inside the launch sequence.
+kill_wait     = 2
+edge_wait     = 1
+activate_wait = 3
+
+# Window title passed to AppActivate. Default 'Edge' works in EN locales.
+window_title  = Edge

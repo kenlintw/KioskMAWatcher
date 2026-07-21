@@ -4,6 +4,17 @@
 
 This project automates the maintenance workflow for Miramar Cinemas self-service kiosks.
 
+> **Two implementations are kept side-by-side:**
+>
+> 1. **Perl (canonical)** — `kioskMA.pl` plus an optional `kioskMA.cfg`.
+>    One unified script with `watch` / `launch` / `trigger` subcommands.
+>    See [Install](docs/Install.md) for setting up Strawberry Perl on the
+>    kiosk.
+> 2. **Windows batch (legacy reference)** — `MAWatcher.bat`,
+>    `launchMAPage.bat`, and the `WhoamiIsAdmin` / `WhoamiIsUser`
+>    variants. Kept for comparison; the Startup shortcut should point
+>    at the Perl version.
+
 During scheduled backend maintenance:
 
 1. Stop the Kiosk application.
